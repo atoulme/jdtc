@@ -1,0 +1,5 @@
+To call the JDT compiler, type jdtc in the command line, followed by the usual javac arguments.
+
+For more information on jdtc, see http://jdtc.rubyforge.org
+
+

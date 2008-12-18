@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+if ($*.include? "-h" or $*.include? "--help" or $*.include? "-help")
+  puts <<-HELP
+  jdtc - a wrapper for the JDT Batch compiler.
+  USAGE: jdtc <javac arguments>
+HELP
+  exit
+end
+
+require "#{File.dirname __FILE__}/../lib/jdtc.rb"
+
+include Jdtc
+
+jdtc($*)  

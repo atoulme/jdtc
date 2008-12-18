@@ -1,0 +1,8 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/jdtc.rb
+bin/jdtc
+compiler/ecj-3.4.1.jar
