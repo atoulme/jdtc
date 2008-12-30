@@ -18,7 +18,7 @@ module Jdtc
     else
       java_call = "$JAVA_HOME/bin/java"
     end
-    puts "#{java_call} -classpath #{ecj_location} org.eclipse.jdt.internal.compiler.batch.Main #{args.join(" ")}"
+    trace "#{java_call} -classpath #{ecj_location} org.eclipse.jdt.internal.compiler.batch.Main #{args.join(" ")}"
     system("#{java_call} -classpath #{ecj_location} org.eclipse.jdt.internal.compiler.batch.Main #{args.join(" ")}") or fail "Compilation failed"
   end
 end
